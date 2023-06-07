@@ -1,0 +1,34 @@
+{
+  "name": "car-service-app-fastify",
+  "private": true,
+  "engines": {
+    "node": ">=16 <17",
+    "npm": ">=8.8 <9"
+  },
+  "scripts": {
+    "install:shared": "cd shared && npm install",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:all": "npm install && npm run install:shared && npm run install:client && npm run install:server",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:fs": "ls-lint",
+    "lint:shared:js": "cd shared && npm run lint:js",
+    "lint:shared": "cd shared && npm run lint",
+    "lint:client:css": "cd client && npm run lint:css",
+    "lint:client:js": "cd client && npm run lint:js",
+    "lint:client": "cd client && npm run lint",
+    "lint:server:js": "cd server && npm run lint:js",
+    "lint:server": "cd server && npm run lint",
+    "lint": "npm run lint:editorconfig && npm run lint:fs && npm run lint:shared && npm run lint:client && npm run lint:server"
+  },
+  "devDependencies": {
+    "@ls-lint/ls-lint": "1.11.2",
+    "editorconfig-checker": "5.0.1",
+    "eslint": "8.40.0",
+    "eslint-plugin-import": "2.27.5",
+    "lint-staged": "13.2.2",
+    "prettier": "2.8.8",
+    "simple-git-hooks": "2.8.1",
+    "typescript": "5.0.4"
+  }
+}

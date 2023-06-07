@@ -1,0 +1,21 @@
+GET http://localhost:3001/api/workshops HTTP/1.1
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDExNDM0LCJleHAiOjE2ODUwOTc4MzR9.HVAMzp_rvFW_2sXDL-x3xbLLqENA-5l0mdJ8DIpDIXQ
+
+###
+
+GET http://localhost:3001/api/workshops/3 HTTP/1.1
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg1MDExNDM0LCJleHAiOjE2ODUwOTc4MzR9.HVAMzp_rvFW_2sXDL-x3xbLLqENA-5l0mdJ8DIpDIXQ
+
+###
+
+POST http://localhost:3001/api/services HTTP/1.1
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg1MDc2MTM1LCJleHAiOjE2ODUxNjI1MzV9.Cf4h2wOgJOAtH2foNJAKZBWeCmmt80CINTabLgSTSuw
+
+{
+    "workshopId": 3,
+    "title": "Нова покраска 6",
+    "price": 600
+}

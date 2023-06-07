@@ -1,0 +1,30 @@
+GET http://localhost:3001/api/orders HTTP/1.1
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg1MDczNDk5LCJleHAiOjE2ODUxNTk4OTl9.smqU3kEB49He0DOp9hkn1ZqDfMNzW8ZMBkVcqd0-ZR0
+
+###
+
+POST http://localhost:3001/api/orders HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg1MDczNDk5LCJleHAiOjE2ODUxNTk4OTl9.smqU3kEB49He0DOp9hkn1ZqDfMNzW8ZMBkVcqd0-ZR0
+Content-type: application/json
+
+{
+    "description" : "Треба поміняти колеса",
+    "carId": 25,
+    "model": "Fiesta",
+    "yearOfProduction": 2017,
+    "licensePlateNumber": "AK 9265 AK",
+    "visitDate": "2023-05-25T13:06:06.403Z",
+    "workshopId": 3,
+    "services": [{ "id": 1, "title": "Комп'ютерна діагностика", "price": 200  }, { "id": 10, "title": "Заміна гальмівних дисків", "price": 150  }]
+}
+
+###
+
+PATCH http://localhost:3001/api/orders/9/change-status HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsImlhdCI6MTY4NTAzMzMyMiwiZXhwIjoxNjg1MTE5NzIyfQ.-HulEKaztRv4faTpIqtL3hAhjnqyjlf9hgJkiEYGjz4
+Content-type: application/json
+
+{
+    "status" : "Rejected"
+}

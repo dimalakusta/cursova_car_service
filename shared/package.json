@@ -1,0 +1,22 @@
+{
+  "name": "shared",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=16 <17",
+    "npm": ">=8 <9"
+  },
+  "scripts": {
+    "lint:js": "npx eslint --ext .js src",
+    "lint": "npm run lint:js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc-alias": "1.8.6"
+  },
+  "dependencies": {
+    "dayjs": "1.11.7",
+    "joi": "17.9.2"
+  }
+}

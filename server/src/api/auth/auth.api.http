@@ -1,0 +1,28 @@
+POST http://localhost:3001/api/auth/login HTTP/1.1
+Content-type: application/json
+
+{
+    "email": "pashanaumencko@gmail.com",
+    "password": "1234qwer"
+}
+
+###
+
+POST http://localhost:3001/api/auth/login HTTP/1.1
+Content-type: application/json
+
+{
+    "email": "admin@demo.com",
+    "password": "admin"
+}
+
+###
+
+POST http://localhost:3001/api/auth/register HTTP/1.1
+Content-type: application/json
+
+{
+    "username": "pashanaumencko1",
+    "email": "pashanaumencko1@gmail.com",
+    "password": "4321qwer"
+}

@@ -1,0 +1,6 @@
+const DEFAULT_CREATE_SERVICE_FORM_PAYLOAD = {
+  title: '',
+  price: 0
+};
+
+export { DEFAULT_CREATE_SERVICE_FORM_PAYLOAD };

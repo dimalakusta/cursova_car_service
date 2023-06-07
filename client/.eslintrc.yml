@@ -1,0 +1,67 @@
+extends:
+  - react-app
+  - airbnb
+  - ../.eslintrc.yml
+
+env:
+  browser: true
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  sourceType: module
+
+plugins:
+  - react
+  - import
+
+settings:
+  react:
+    version: '17'
+
+rules:
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  spaced-comment:
+    - error
+    - always
+    - markers:
+        - '/'
+  implicit-arrow-linebreak:
+    - off
+  import/no-unresolved:
+    - off
+  react/jsx-indent:
+    - error
+    - 2
+  react/jsx-indent-props:
+    - error
+    - 2
+  react/function-component-definition:
+    - 2
+    - namedComponents: arrow-function
+  react/jsx-wrap-multilines:
+    - off
+  react/jsx-filename-extension:
+    - 1
+    - extensions:
+        - '.tsx'
+        - '.jsx'
+  import/extensions:
+    - off
+  import/no-default-export:
+    - off
+  react/react-in-jsx-scope:
+    - off
+  react/prop-types:
+    - off
+  react/jsx-props-no-spreading:
+    - off
+  jsx-a11y/no-static-element-interactions:
+    - off
+  jsx-a11y/click-events-have-key-events:
+    - off
+  jsx-a11y/label-has-associated-control:
+    - off
